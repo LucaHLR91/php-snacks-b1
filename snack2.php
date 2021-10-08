@@ -8,4 +8,15 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” 
     $name = $_GET['name'];
     $email = $_GET['email'];
     $age = $_GET['age'];
+
+    echo $name . '</br>';
+    echo $email . '</br>';
+    echo $age . '</br>';
+
+    // SE LA LUNGHEZZA DI NAME E MAGGIORE DI 3, SE @ E . SONO DIVERSI DA FALSO, QUINDI PRESENTI E SE AGE E UN NUMERO ALLORA MI DAI ACCESSO
+    if (strlen($name) > 3 && strpos($email, '@') != false && strpos($email, '.') != false && is_numeric($age) != false ) {
+        echo 'Access granted';
+    } else {
+        echo 'Access denied';
+    }
 ?>
