@@ -32,4 +32,8 @@ Olimpia Milano - Cantù | 55-60 -->
             'awayScore' => 75,
         ],
     ];
+
+    for ($i = 0; $i < count($matches); $i++) {
+        echo $matches[$i]['homeTeam'] . ' ' . '-' . ' ' . $matches[$i]['awayTeam'] . ' ' . '|' . ' ' . $matches[$i]['homeScore'] . '-' . $matches[$i]['awayScore'] . '</br>';
+    }
 ?>
