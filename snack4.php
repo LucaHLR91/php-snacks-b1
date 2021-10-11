@@ -31,14 +31,11 @@
     <title>Lista di numeri</title>
 </head>
 <body>
-    <ul>
+    <ul> Lista numeri:
         <?php 
-           while (count($rndNumbers) < 15) {
-            $rndNumber = rand(1, 100);
-            if (!in_array($rndNumber, $rndNumbers)) {
-                $rndNumbers[] = $rndNumber;
-            };
-        }
+           foreach($rndNumbers as $number) {
+               echo '<li>' . $number . '</li>';
+           }
         ?>
     </ul>
 </body>
