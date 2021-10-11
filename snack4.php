@@ -10,6 +10,16 @@
     //     }
     //     echo $rndNumbers . '</br>';
     // }
+
+    while (count($rndNumbers) < 15) {
+        $rndNumber = rand(1, 100);
+        if (!in_array($rndNumber, $rndNumbers)) {
+            $rndNumbers[] = $rndNumber;
+        }
+        
+    }
+
+    var_dump($rndNumbers);
 ?>
 
 <!DOCTYPE html>
@@ -23,13 +33,12 @@
 <body>
     <ul>
         <?php 
-            for ($i = 0; $i < 15; $i++) {
+           while (count($rndNumbers) < 15) {
             $rndNumber = rand(1, 100);
-            if ($rndNumber != count($rndNumbers)) {
-                $rndNumbers = $rndNumber;
-            }
-            echo '<li>' . $rndNumbers . '</li>';
-        } 
+            if (!in_array($rndNumber, $rndNumbers)) {
+                $rndNumbers[] = $rndNumber;
+            };
+        }
         ?>
     </ul>
 </body>
