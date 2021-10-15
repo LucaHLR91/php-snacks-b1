@@ -1,3 +1,6 @@
+<!-- Stampare tutti i nostri hotel con tutti i dati disponibili.
+Avremo un file PHP con il nostro “database” e un file con tutta la logica. -->
+
 <?php 
     require __DIR__ . '/database/db_snack9A.php';
 ?>

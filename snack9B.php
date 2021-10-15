@@ -1,0 +1,2 @@
+<!-- Attraverso un parametro GET da inserire direttamente nell’url (uno alla volta), filtrare gli hotel che hanno un parcheggio, numero minimo di stelle o massima lontananza dal centro.
+Se non c’è un filtro, visualizzare come in precedenza tutti gli hotel -->
